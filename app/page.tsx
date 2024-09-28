@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Sidebar from "./components/layout/Sidebar";
 import StepCard from "./components/ui/StepCard";
+import Button from "./components/ui/Button";
 
 const processData = [
   {
@@ -9,7 +10,7 @@ const processData = [
             be directed to a simple form where you can enter the details
             of the person you'd like to refer to the Marcy Lab School
             Fellowship.`,
-    color: "red",
+    color: "#ef541e",
     img: "/marcy2.png",
     step: 1,
   },
@@ -52,12 +53,13 @@ export default function Home() {
             <h1 className="w-[80%] pt-[5%]  text-[5rem]   m-auto text-center">
               THE MARCY LAB SCHOOL REFERRAL HUB{" "}
             </h1>
-            <p className=" w-[60%] text-center pt-5   m-auto text-[1.2rem] font-medium">
+            <p className="  pb-5 w-[60%] text-center pt-5   m-auto text-[1.2rem] font-medium">
               {" "}
               Know someone who belongs at Marcy? As a fellow, alum, or staff
               member, refer top talent through the Marcy Lab School Referral
               Program.
             </p>
+            <Button text='START A REFERRAL' />
           </div>
         </div>
 

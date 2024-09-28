@@ -16,7 +16,8 @@ function StepCard({color, img, title, body, step}: StepCardProps) {
     <div>
               <div className="flex gap-3 ">
                 {" "}
-                <h1 className={ `h-[3.5rem] font-medium  mt-5  pb-2 text-[2.3rem] rounded-full text-center bg-[${color}] w-[3.5rem]` }>
+                <h1 className={ `h-[3.5rem] font-medium  mt-5  pb-2 text-[2.3rem] rounded-full text-center  w-[3.5rem]` }
+                style={{ backgroundColor: color }}>
                   {step}
                 </h1>{" "}
                 <h1 className="pt-6  font-medium pl-3 text-[1.8rem]">
