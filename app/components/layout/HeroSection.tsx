@@ -14,7 +14,10 @@ function HeroSection() {
               member, refer top talent through the Marcy Lab School Referral
               Program.
             </p>
-            <Button text='START A REFERRAL' />
+            <div className='m-auto w-[10rem]'>
+            <Button  text='START A REFERRAL' />
+            </div>
+            
           </div>
         </div>
   )

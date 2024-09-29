@@ -1,4 +1,4 @@
-
+import Button from "./Button"
 
 
 interface StepCardProps {
@@ -6,12 +6,13 @@ interface StepCardProps {
     img: string,
     title: string,
     body: string,
-    step: number
+    step: number,
+    button?: {text: string, invert: boolean}
 }
 
 
 
-function StepCard({color, img, title, body, step}: StepCardProps) {
+function StepCard({color, img, title, body, step, button}: StepCardProps) {
   return (
     <div>
               <div className="flex gap-3 ">
@@ -29,6 +30,9 @@ function StepCard({color, img, title, body, step}: StepCardProps) {
                   <p className=" pt-10 font-medium text-[1.3rem] w-[30rem]">
                     {body}
                   </p>
+                  {
+                    button && <Button text={button.text} invert={button.invert} />
+                  }
                 
                 </div>
 

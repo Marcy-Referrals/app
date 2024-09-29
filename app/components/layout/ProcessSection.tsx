@@ -11,6 +11,7 @@ const processData = [
       color: "#ef541e",
       img: "/marcy2.png",
       step: 1,
+      button: {invert: true, text: 'SUBMIT A REFERRAL'}
     },
   
     {
@@ -42,7 +43,7 @@ function ProcessSection() {
       support our community and get rewarded along the way.
     </p>
     <div>
-      {processData.map(({ img, color, body, title, step }) => {
+      {processData.map(({ img, color, body, title, step, button }) => {
         return (
           <div className="border-t-[0.1rem] pb-10 border-t-[#261f1d]">
             <StepCard
@@ -51,6 +52,7 @@ function ProcessSection() {
               color={color}
               body={body}
               title={title}
+              button={button}
             />
           </div>
         );
