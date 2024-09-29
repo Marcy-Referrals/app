@@ -15,5 +15,8 @@ const config: Config = {
     },
   },
   plugins: [],
+  screens: {
+    'xs': {'min' : '490px'}
+  },
 };
 export default config;

@@ -27,8 +27,8 @@ const processData = [
 function ProcessSection() {
   return (
     <div className="  mt-10 w-[90%]   border-t-[0.3rem] m-auto border-t-[#261f1d]">
-    <h1>THE PROCESS</h1>
-    <p className="w-[30rem] pb-10 font-medium">
+    <h1 className='text-[2.3rem] lg:text-[2.8rem] xl-[3rem]  md:text-[2.7rem]'>THE PROCESS</h1>
+    <p className="w-[23rem] sm:w-[25rem] md:w-[30rem] pb-10 font-medium">
       {" "}
       Earn points when your referral connects with our recruitment team,
       tours the campus, or submits an application. It’s an easy way to
