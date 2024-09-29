@@ -1,14 +1,16 @@
 import Button from "../ui/Button";
+import Hb from "./Hb";
 function HeroSection() {
   return (
-    <div className=" relative overflow-hidden h-[30rem]">
+    <div className=" relative overflow-hidden h-[80vh]">
       <img
         className="w-full object-cover h-full  animate-moveWithin blur-[100%]  absolute "
         src="/marcy1.jpg"
       ></img>
       <div className="w-full h-full absolute z-[1]  bg-white opacity-80"></div>
       <div className="z-[100] relative">
-        <h1 className="w-[80%] pt-[5%] text-[2.7rem] lg:text-[4rem] md:text-[3.2rem] 865px:text-[3.5rem] xl:text-[4.2rem] 2xl:text-[4.5rem] m-auto text-center">
+        <Hb />
+        <h1 className="w-[80%] pt-[7rem] text-[2.7rem] lg:text-[4rem] md:text-[3.2rem] 865px:text-[3.5rem] xl:text-[4.2rem] 2xl:text-[4.5rem] m-auto text-center">
           THE MARCY LAB SCHOOL REFERRAL PROGRAM
         </h1>
         <p className=" sm:flex  pb-5 w-[70%] sm:w-[60%] text-center pt-5 text-[1rem]    m-auto sm:text-[1.2rem] font-medium">
