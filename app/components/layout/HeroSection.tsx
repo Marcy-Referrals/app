@@ -4,10 +4,11 @@ function HeroSection() {
   return (
     <div className=" relative overflow-hidden h-[80vh]">
       <img
-        className="w-full object-cover h-full  animate-moveWithin blur-[100%]  absolute "
+      
+        className="w-full object-cover   h-full  animate-moveWithin    absolute "
         src="/marcy1.jpg"
       ></img>
-      <div className="w-full h-full absolute z-[1]  bg-white opacity-80"></div>
+      <div className="w-full h-full absolute z-[1]   bg-white opacity-80"></div>
       <div className="z-[100] relative">
         <Hb />
         <h1 className="w-[80%] pt-[7rem] text-[2.7rem] lg:text-[4rem] md:text-[3.2rem] 865px:text-[3.5rem] xl:text-[4.2rem] 2xl:text-[4.5rem] m-auto text-center">
