@@ -6,11 +6,11 @@ import ProcessSection from "./components/layout/ProcessSection";
 import HeroSection from "./components/layout/HeroSection";
 
 const pointsData = [
-  { action: "Referall Submission", points: 10 },
-  { action: "Prospect Campus Tour", points: 20 },
-  { action: "Prospect Submits Application", points: 50 },
-  { action: "Prospect Receives an Offer", points: 100 },
-  { action: "Prospect Becomes a Fellow", points: 200 },
+  { action: "Referrall Submission", details: 'Submit a referral through our form', points: 10 },
+  { action: "Campus Tour", details: 'Prospect schedules and attends a tour of our campus',  points: 20 },
+  { action: "Prospect Completes Application", details: "Prospect submits a fellowship application through the official application portal", points: 50 },
+  { action: "Prospect Receives an Offer", details:"Prospect is extended a formal offer to join the followship program", points: 100 },
+  { action: "Prospect Becomes a Fellow", details:"Prospect starts a fellowship at The Marcy Lab School", points: 200 },
 ];
 export default function Home() {
   return (
@@ -31,7 +31,7 @@ export default function Home() {
             alt="Description of image"
           />
           <div className="bg-[#c6d7e8] absolute w-full h-full opacity-70 "></div>
-          <div className="relative z-10 w-[90%] pb-20 m-auto pt-5">
+          <div className="relative z-10 w-[90%] pb-10 m-auto pt-5">
             <h1 className="text-[2.3rem] lg:text-[2.8rem] xl-[3rem]  md:text-[2.7rem]">
               REFERRAL MILESTONES
             </h1>
@@ -39,18 +39,21 @@ export default function Home() {
               Curious about how to rack up those referral points?
             </p>
           </div>
-          <div className="pb-10 ">
+          <div className="pb-5 ">
             {pointsData.map((milestone) => {
               return (
                 <div className="relative z-10 w-[90%] m-auto py-5 border-t-[#261f1d] flex gap-3 justify-between border-t-[0.1rem]">
-                  <h1 className=" font-medium  text-[1.3rem] md:text-[1.8rem] lg:text-[1.8rem] sm:text-[1.6rem]  ">
+                  <div>
+                  <h1 className=" w-[12rem] sm:w-[25rem]  font-medium  text-[1.3rem] md:text-[1.8rem] lg:text-[1.8rem] sm:text-[1.6rem]  ">
                     {milestone.action}
                   </h1>
+                  <p className="w-[12rem] hidden sm:flex sm:w-[20rem] text-[0.8rem] md:text-[1rem] font-medium ">{milestone.details}</p>
+                    </div>
                   <h1 className="text-[1.8rem] md:text-[2.3rem] lg:text-[2.7rem]">
                     →
                   </h1>
                   <h1 className="text-[1.3rem] md:text-[1.8rem] lg:text-[1.8rem] sm:text-[1.6rem]  font-medium">
-                    {milestone.points} POINTS
+                    {milestone.points} PTS
                   </h1>
                 </div>
               );
