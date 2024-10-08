@@ -2,7 +2,7 @@ import Button from "../ui/Button";
 import Hb from "./Hb";
 function HeroSection() {
   return (
-    <div className=" relative overflow-hidden h-[80vh]">
+    <div className=" relative overflow-hidden h-[70vh]">
       <img
       
         className="w-full object-cover   h-full  animate-moveWithin    absolute "

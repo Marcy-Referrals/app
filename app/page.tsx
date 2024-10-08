@@ -4,6 +4,7 @@ import StepCard from "./components/ui/StepCard";
 import Button from "./components/ui/Button";
 import ProcessSection from "./components/layout/ProcessSection";
 import HeroSection from "./components/layout/HeroSection";
+import QuestionsSection from "./components/layout/QuestionsSection";
 
 const pointsData = [
   { action: "Referrall Submission", details: 'Submit a referral through our form', points: 10 },
@@ -30,7 +31,7 @@ export default function Home() {
             className="absolute opacity-20 top-0 left-0 w-full h-full object-cover grayscale "
             alt="Description of image"
           />
-          <div className="bg-[#c6d7e8] absolute w-full h-full opacity-70 "></div>
+          <div className="bg-primary2 absolute w-full h-full opacity-70 "></div>
           <div className="relative z-10 w-[90%] pb-10 m-auto pt-5">
             <h1 className="text-[2.3rem] lg:text-[2.8rem] xl-[3rem]  md:text-[2.7rem]">
               REFERRAL MILESTONES
@@ -61,6 +62,8 @@ export default function Home() {
           </div>
         </div>
         <div>
+          <QuestionsSection />
+          
           <h1 className="text-[#261f1d] text-[1.3rem]  bg-[#a6c2b4] text-center py-6">
             &copy; 2024 THE MARCY LAB SCHOOL
           </h1>
